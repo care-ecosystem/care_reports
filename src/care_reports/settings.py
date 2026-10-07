@@ -6,7 +6,7 @@ from django.core.signals import setting_changed
 from django.dispatch import receiver
 from rest_framework.settings import perform_import
 
-from care_myplugin.apps import PLUGIN_NAME
+from care_reports.apps import PLUGIN_NAME
 
 env = environ.Env()
 
@@ -17,7 +17,7 @@ class PluginSettings:
     in Django settings, then falls back to environment variables, then defaults.
 
     Usage:
-        from care_myplugin.settings import plugin_settings
+        from care_reports.settings import plugin_settings
         api_key = plugin_settings.MYPLUGIN_API_KEY
     """
 
@@ -84,7 +84,6 @@ def _reload_plugin_settings(*, setting, **kwargs):
         plugin_settings.reload()
 
 
-# TODO: Add your settings keys and defaults here
 REQUIRED_SETTINGS: set[str] = set()
 
 DEFAULTS: dict[str, Any] = {
