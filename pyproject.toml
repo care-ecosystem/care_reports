@@ -1,7 +1,7 @@
 [project]
-name = "care_myplugin"  # TODO: rename to care_yourplugin
+name = "care_reports"
 version = "0.1.0"
-description = "A CARE backend plugin."  # TODO: describe your plugin
+description = "A CARE backend plugin."
 readme = "README.md"
 authors = [
   {name = "care-ecosystem", email = "jagan.kumar@egovernments.org"} 
@@ -23,8 +23,8 @@ test = [
 ]
 
 [project.urls]
-bugs = "https://github.com/care-ecosystem/care_myplugin/issues"  # TODO: update
-homepage = "https://github.com/care-ecosystem/care_myplugin"  # TODO: update
+bugs = "https://github.com/care-ecosystem/care_reports/issues"
+homepage = "https://github.com/care-ecosystem/care_reports"
 
 [tool.ruff]
 line-length = 120
